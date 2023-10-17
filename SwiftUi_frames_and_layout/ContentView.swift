@@ -9,11 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        V Stack {
+        VStack {
+            Text("The Stack Pratice").frame(width: 200 ,height:499).background(.green)
+            
+            
+            
+            Spacer()
+            
+            
+            HStack {
+            
+          
             Image(systemName: "globe")
-                .imageScale(.large)
+                
+                    .imageScale(.large)
+                
+                .aspectRatio(contentMode: .fit)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+        }
+            Spacer()
         }
         .padding()
     }
