@@ -10,16 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("The Stack Pratice").frame(width: 200 ,height:499).background(.green)
-            
-            
-            
-            Spacer()
-            
-            
+            Text("The Stack Pratice")
+          //  use the padding to add space . specify amount of space
+          // .padding( .bottom, 100)
             HStack {
-            
-          
             Image(systemName: "globe")
                 
                     .imageScale(.large)
@@ -28,8 +22,9 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
         }
-            Spacer()
-        }
+            
+        }.background(.green)
+        .frame(width: 400 ,height:499)
         .padding()
     }
 }
