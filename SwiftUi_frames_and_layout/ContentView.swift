@@ -10,22 +10,33 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
+        
             Text("The Stack Pratice")
           //  use the padding to add space . specify amount of space
-          // .padding( .bottom, 100)
-            HStack {
+          .padding( .bottom, 100)
+            VStack {
+            
             Image(systemName: "globe")
-                
+                    
                     .imageScale(.large)
-                
-                .aspectRatio(contentMode: .fit)
                 .foregroundColor(.accentColor)
+                
             Text("Hello, world!")
         }
             
-        }.background(.green)
-        .frame(width: 400 ,height:499)
-        .padding()
+            HStack {
+                Button("one"){}
+                Button("Two"){}
+                Button("three"){}
+            }
+            
+        }
+        
+        // frame outside the stack do change anything
+//            .frame(width: 400 ,height:499, alignment: .trailing).background(.red)
+//            .padding(.bottom,276)
+       
+
     }
 }
 
