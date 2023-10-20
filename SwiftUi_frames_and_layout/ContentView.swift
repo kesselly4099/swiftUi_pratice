@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
         
-            Text("The Stack Pratice")
+            Text("The Stack Pratice") 
           //  use the padding to add space . specify amount of space
           .padding( .bottom, 100)
             VStack {
@@ -24,7 +24,7 @@ struct ContentView: View {
             Text("Hello, world!")
         }
             
-            HStack {
+            VStack {
                 Button("one"){}
                 Button("Two"){}
                 Button("three"){}
