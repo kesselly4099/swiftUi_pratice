@@ -16,9 +16,9 @@ struct ContentView: View {
           .padding( .bottom, 100)
             VStack {
             
-            Image(systemName: "globe")
+                Image(systemName: "globe").resizable().frame(width: 50, height: 50)
                     
-                    .imageScale(.large)
+                   // .imageScale(.large)
                 .foregroundColor(.accentColor)
                 
             Text("Hello, world!")
@@ -32,10 +32,11 @@ struct ContentView: View {
             
         }
         
+        
         // frame outside the stack do change anything
 //            .frame(width: 400 ,height:499, alignment: .trailing).background(.red)
 //            .padding(.bottom,276)
-       
+     
 
     }
 }
